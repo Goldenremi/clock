@@ -29,7 +29,7 @@ body {
 
 .main-header {
 	width: 100%;
-	padding: .5rem;
+	padding: 0.5rem;
 	font-size: 2rem;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -55,8 +55,10 @@ body {
 }
 
 .section-container div,
-.hour-hands>hr,
-.minute-hands>hr,.clock-hands>hr, .center{
+.hour-hands > hr,
+.minute-hands > hr,
+.clock-hands > hr,
+.center {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -94,14 +96,14 @@ body {
 	z-index: 2;
 }
 
-.hour-hands>hr {
+.hour-hands > hr {
 	width: calc(55 * var(--smallest_side));
 	height: 0.5rem;
 	background-color: white;
 	border: none;
 }
 
-.minute-hands>hr {
+.minute-hands > hr {
 	width: calc(42 * var(--smallest_side));
 	height: 0.125rem;
 	background-color: black;
@@ -109,38 +111,33 @@ body {
 	z-index: 1;
 }
 
-.clock-hands>hr{
+.clock-hands > hr {
 	background-color: white;
 	border: none;
 }
 
-
-.hour-hand{
-		height: .45rem;
+.hour-hand {
+	height: 0.45rem;
 	width: calc(10 * var(--smallest_side));
-	transform: translateX( calc(5 * var(--smallest_side)));
-
+	transform: translateX(calc(5 * var(--smallest_side)));
 }
 
-.minute-hand{
-	height: .3rem;
+.minute-hand {
+	height: 0.3rem;
 	width: calc(15 * var(--smallest_side));
-	transform: translateX( calc(7.5 * var(--smallest_side)));
-
+	transform: translateX(calc(7.5 * var(--smallest_side)));
 }
 
-.second-hand{
-	height: .2rem;
+.second-hand {
+	height: 0.2rem;
 	width: calc(18 * var(--smallest_side));
-	transform: translateX( calc(9* var(--smallest_side)));
-
+	transform: translateX(calc(9 * var(--smallest_side)));
 }
 
-.center-hand{
-	height: .6rem;
-	width: .6rem;;
+.center-hand {
+	height: 0.6rem;
+	width: 0.6rem;
 }
-
 
 .main-footer {
 	position: fixed;
@@ -153,10 +150,9 @@ body {
 
 .main-footer a {
 	color: darkcyan;
-	word-wrap:break-word ;
+	word-wrap: break-word;
 }
 
 .main-footer a:hover {
 	color: cyan;
 }
-

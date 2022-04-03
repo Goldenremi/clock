@@ -28,6 +28,6 @@ setInterval(()=>{
 		let secondText = 'deg) translateX( calc(9 * var(--smallest_side)))'
 		secondHand ? secondHand.style.transform = leadText + (6*second) + secondText : null
 		minuteHand ? minuteHand.style.transform = leadText + (6*minute) + minuteText : null
-		hourHand ? hourHand.style.transform = leadText + (15*hour) + hourText : null
+		hourHand ? hourHand.style.transform = leadText + (30*hour) + hourText : null
 
 }, 1000)

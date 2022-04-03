@@ -76,7 +76,7 @@ body {
 	width: calc(55 * var(--smallest_side));
 	height: calc(55 * var(--smallest_side));
 	border-radius: calc(55 * var(--smallest_side));
-	background-color: black;
+	background-color: #000072;
 }
 
 .section-container > div > div > div {

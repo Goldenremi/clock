@@ -1,0 +1,157 @@
+:root {
+	--smallest_side: 1vw;
+}
+
+@media (min-width: 100vh) {
+	:root {
+		--smallest_side: 1vh;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-header {
+	width: 100%;
+	padding: .5rem;
+	font-size: 2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: darkcyan;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	text-align: center;
+	top: 0;
+}
+
+.section-container {
+	width: calc(65 * var(--smallest_side));
+	height: calc(65 * var(--smallest_side));
+	border-radius: calc(65 * var(--smallest_side));
+	background-color: white;
+	box-shadow: 2px 2px 4px 1px #8f8f8f;
+	position: relative;
+	border: 2px solid black;
+	transform: rotate(270deg);
+}
+
+.section-container div,
+.hour-hands>hr,
+.minute-hands>hr,.clock-hands>hr, .center{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.section-container > div {
+	width: calc(61 * var(--smallest_side));
+	height: calc(61 * var(--smallest_side));
+	background-color: white;
+	border-radius: calc(61 * var(--smallest_side));
+	background-color: #cfcfcf;
+}
+
+.section-container > div > div {
+	width: calc(55 * var(--smallest_side));
+	height: calc(55 * var(--smallest_side));
+	border-radius: calc(55 * var(--smallest_side));
+	background-color: black;
+}
+
+.section-container > div > div > div {
+	width: calc(42 * var(--smallest_side));
+	height: calc(42 * var(--smallest_side));
+	border-radius: calc(42 * var(--smallest_side));
+	background-color: white;
+}
+
+.section-container > div > div > div > div {
+	width: calc(38 * var(--smallest_side));
+	height: calc(38 * var(--smallest_side));
+	border-radius: calc(38 * var(--smallest_side));
+	background-color: white;
+	z-index: 2;
+}
+
+.hour-hands>hr {
+	width: calc(55 * var(--smallest_side));
+	height: 0.5rem;
+	background-color: white;
+	border: none;
+}
+
+.minute-hands>hr {
+	width: calc(42 * var(--smallest_side));
+	height: 0.125rem;
+	background-color: black;
+	border: none;
+	z-index: 1;
+}
+
+.clock-hands>hr{
+	background-color:black;
+	border-radius: .5rem;
+}
+
+
+.hour-hand{
+		height: .6rem;
+	width: calc(10 * var(--smallest_side));
+	transform: translateX( calc(5 * var(--smallest_side)));
+
+}
+
+.minute-hand{
+	height: .3rem;
+	width: calc(15 * var(--smallest_side));
+	transform: translateX( calc(7.5 * var(--smallest_side)));
+
+}
+
+.second-hand{
+	height: .2rem;
+	width: calc(18 * var(--smallest_side));
+	transform: translateX( calc(9* var(--smallest_side)));
+
+}
+
+
+.main-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.main-footer a {
+	color: darkcyan;
+	word-wrap:break-word ;
+}
+
+.main-footer a:hover {
+	color: cyan;
+}
+
